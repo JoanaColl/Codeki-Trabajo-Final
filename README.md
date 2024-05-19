@@ -35,7 +35,9 @@
     <a href="https://www.java.com/" target="_blank"><img src="https://img.shields.io/badge/Java-blue?style=flat&logo=Java&logoColor=blue&labelColor=blue&color=blue"></a>
     <a href="https://spring.io/" target="_blank"><img src="https://img.shields.io/badge/Spring%20Boot-green?style=flat&labelColor=green&color=green"></a>
     <a href="https://maven.apache.org/" target="_blank"><img src="https://img.shields.io/badge/Maven-red?style=flat&labelColor=red&color=red"></a>
+    <a href="https://mysql.com/" target="_blank"><img src="https://img.shields.io/badge/MySQL-blue?style=flat&labelColor=blue&color=blue"></a>
     <a href="https://github.com/" target="_blank"><img src="https://img.shields.io/badge/Github-grey?style=flat&labelColor=grey&color=grey"></a>
+    
    </p>
   <p align="right"><a href="#ir-arriba">:arrow_up:</a></p>
 

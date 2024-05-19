@@ -97,7 +97,7 @@
   }
   ```
   findAllBooks: `localhost:PORT/api/book`<br>
-  findByIdBook: `localhost:PORT/api/book/{id}`<br>
+  findByIdBook: `localhost:PORT/api/book/ID_BOOK`<br>
   updateBook: `localhost:PORT/api/book/update`<br>
   ```json
   {
@@ -110,7 +110,7 @@
               }
   }
   ```
-  deleteBook: `localhost:PORT/api/book/{id}`<br>
+  deleteBook: `localhost:PORT/api/book/ID_BOOK`<br>
   <p align="right"><a href="#ir-arriba">:arrow_up:</a></p>
 
 <!-- FUNCIONALIDAD DE api-library -->

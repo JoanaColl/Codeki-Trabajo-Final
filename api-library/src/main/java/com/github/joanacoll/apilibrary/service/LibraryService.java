@@ -7,15 +7,18 @@ import com.github.joanacoll.apilibrary.model.LibraryBookDto;
 import com.github.joanacoll.apilibrary.repository.ILibraryRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
 public class LibraryService implements ILibraryService{
 
     ILibraryRepository libraryRepository;
+    BookClient bookClient;
 
-    public LibraryService(ILibraryRepository libraryRepository) {
+    public LibraryService(ILibraryRepository libraryRepository, BookClient bookClient) {
         this.libraryRepository = libraryRepository;
+        this.bookClient = bookClient;
     }
 
     @Override
@@ -31,6 +34,17 @@ public class LibraryService implements ILibraryService{
     @Override
     public List<Library> allLibraries() {
         return libraryRepository.findAll();
+    }
+
+    @Override
+    public List<LibraryBookDto> allLibraryBooks() {
+        List <Library> libraryList = libraryRepository.findAll();
+        List<LibraryBookDto> libraryBookListDto = new ArrayList<>();
+        for (Library l: libraryList) {
+            BookDto bookDto = bookClient.bookDtoById(l.getIdBook());
+            libraryBookListDto.add(new LibraryBookDto(l.getId(), l.getName(), bookDto));
+        }
+        return libraryBookListDto;
     }
 
     @Override

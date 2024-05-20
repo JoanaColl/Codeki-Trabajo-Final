@@ -10,7 +10,7 @@ public interface ILibraryService {
     Library createLibrary(Library library);
     Library libraryById(Long id);
     List<Library> allLibraries();
-//    LibraryBookDto getLibraryBook(Library library, BookDto bookDto);
+    List<LibraryBookDto> allLibraryBooks();
     LibraryBookDto getLibraryBook(Long idLibrary, BookDto bookDto);
 
     Library updateLibrary(Library library);

@@ -46,7 +46,12 @@ public class LibraryController {
         return libraryService.libraryById(id);
     }
 
-    @GetMapping("/book")
+    @GetMapping("/librarybook/all")
+    public List<LibraryBookDto> allLibraryBooks() {
+        return libraryService.allLibraryBooks();
+    }
+
+    @GetMapping("/librarybook")
     public LibraryBookDto getLibraryBook(@RequestParam Long id) {
         Library libraryBd = libraryService.libraryById(id);
         BookDto bookDto = bookClient.bookDtoById(libraryBd.getIdBook());

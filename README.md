@@ -131,7 +131,8 @@
   ```
   getAllLibrary: `localhost:PORT/api/library`<br>
   libraryById: `localhost:PORT/api/library/ID_LIBRARY`<br>
-  getLibraryBook: `localhost:PORT/api/library/book?id=ID_LIBRARY`<br>
+  allLibraryBooks: `localhost:PORT/api/library/librarybook/all`<br>
+  getLibraryBook: `localhost:PORT/api/library/librarybook?id=ID_LIBRARY`<br>
   updateLibrary: `localhost:PORT/api/library/update`<br>
   ```json
   {

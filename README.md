@@ -78,8 +78,8 @@
     "lastname":"Orwell"
   }
   ```
-  findAllAuthors: `localhost:PORT/api/author`<br>
-  findByIdAuthor: `localhost:PORT/api/author/ID_AUTHOR`<br>
+  getAllAuthors: `localhost:PORT/api/author`<br>
+  authorById: `localhost:PORT/api/author/ID_AUTHOR`<br>
   updateAuthor: `localhost:PORT/api/author/update`<br>
   ```json
   {
@@ -98,8 +98,8 @@
     "title": "Carrie"
   }
   ```
-  findAllBooks: `localhost:PORT/api/book`<br>
-  findByIdBook: `localhost:PORT/api/book/ID_BOOK`<br>
+  getAllBooks: `localhost:PORT/api/book`<br>
+  bookById: `localhost:PORT/api/book/ID_BOOK`<br>
   updateBook: `localhost:PORT/api/book/update`<br>
   ```json
   {
